@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.googlecode.concurrent-trees</groupId>
+    <groupId>codes.rafael.concurrent-trees</groupId>
     <artifactId>concurrent-trees</artifactId>
     <version>2.6.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Concurrent-Trees</name>
     <description>Concurrent Radix Trees and Concurrent Suffix Trees for Java.</description>
-    <url>https://github.com/npgall/concurrent-trees</url>
+    <url>https://github.com/raphw/concurrent-trees</url>
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
@@ -20,9 +20,9 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/npgall/${project.artifactId}.git</url>
-        <connection>scm:git:https://github.com/npgall/${project.artifactId}.git</connection>
-        <developerConnection>scm:git:git@github.com:npgall/${project.artifactId}.git</developerConnection>
+        <url>https://github.com/raphw/${project.artifactId}.git</url>
+        <connection>scm:git:https://github.com/raphw/${project.artifactId}.git</connection>
+        <developerConnection>scm:git:git@github.com:raphw/${project.artifactId}.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <developers>
@@ -33,6 +33,15 @@
             <url>http://www.npgall.com</url>
             <roles>
                 <role>owner</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>raphw</id>
+            <name>Rafael Winterhalter</name>
+            <email>rafael.wth@gmail.com</email>
+            <url>https://rafael.codes</url>
+            <roles>
+                <role>developer</role>
             </roles>
         </developer>
     </developers>
