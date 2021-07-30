@@ -168,11 +168,6 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-release-plugin</artifactId>
-                        <version>2.5.3</version>
-                    </plugin>
-                    <plugin>
                         <!--
                             Plugin to PGP-sign all artifacts automatically when running mvn deploy,
                             as required for deployment to the Sonatype/Maven Central repo.
@@ -221,6 +216,22 @@
                                 <goals>
                                     <goal>check</goal>
                                 </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <version>2.5.3</version>
+                        <executions>
+                            <execution>
+                                <id>default</id>
+                                <goals>
+                                    <goal>perform</goal>
+                                </goals>
+                                <configuration>
+                                    <pomFileName>code/pom.xml</pomFileName>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
