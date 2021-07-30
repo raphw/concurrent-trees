@@ -52,6 +52,11 @@ public class ConcurrentRadixTree<O> implements RadixTree<O>, PrettyPrintable, Se
     // Write operations acquire write lock, read operations are lock-free.
     private final Lock writeLock = new ReentrantLock();
 
+    public ConcurrentRadixTree(NodeFactory nodeFactory, Node root) {
+        this.nodeFactory = nodeFactory;
+        this.root = root;
+    }
+
     /**
      * Creates a new {@link ConcurrentRadixTree} which will use the given {@link NodeFactory} to create nodes.
      * 
