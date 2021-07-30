@@ -25,6 +25,17 @@
         <developerConnection>scm:git:git@github.com:raphw/${project.artifactId}.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>central</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>central</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+    </distributionManagement>
     <developers>
         <developer>
             <id>npgall</id>
