@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>codes.rafael.concurrent-trees</groupId>
     <artifactId>concurrent-trees</artifactId>
-    <version>2.6.2</version>
+    <version>2.6.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Concurrent-Trees</name>
     <description>Concurrent Radix Trees and Concurrent Suffix Trees for Java.</description>
@@ -23,7 +23,7 @@
         <url>https://github.com/raphw/${project.artifactId}.git</url>
         <connection>scm:git:https://github.com/raphw/${project.artifactId}.git</connection>
         <developerConnection>scm:git:git@github.com:raphw/${project.artifactId}.git</developerConnection>
-        <tag>concurrent-trees-2.6.2</tag>
+        <tag>HEAD</tag>
     </scm>
     <developers>
         <developer>
@@ -142,6 +142,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <pomFileName>code/pom.xml</pomFileName>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <dependencies>
@@ -190,14 +198,6 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-release-plugin</artifactId>
-                        <version>2.5.3</version>
-                        <configuration>
-                            <pomFileName>code/pom.xml</pomFileName>
-                        </configuration>
                     </plugin>
                     <plugin>
                         <!--
