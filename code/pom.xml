@@ -225,7 +225,7 @@
                         <version>2.5.3</version>
                         <executions>
                             <execution>
-                                <id>default</id>
+                                <id>default-cli</id>
                                 <goals>
                                     <goal>perform</goal>
                                 </goals>
